@@ -4,10 +4,10 @@ class HomeController < ApplicationController
 
   def index
     @employee=EmployeeData.all()
-  end
+   end
 
   def create
-    expire_page(:controller => 'home', :action => 'index')
+    expire_fragment('all_available_products')
   end
 
   def new

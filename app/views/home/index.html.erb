@@ -1,6 +1,7 @@
-<% cache do %>
+<% cache('all_available_products') do %>
   <% @employee.each do |t|%>
     <%=t.name%>
     <%=t.age%>
   <%end%>
 <% end %>
+<%= link_to "create",home_create_path %>
